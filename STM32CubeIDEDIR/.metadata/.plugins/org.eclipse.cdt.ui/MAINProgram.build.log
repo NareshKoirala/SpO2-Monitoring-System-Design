@@ -1,0 +1,70 @@
+14:31:49 **** Incremental Build of configuration Debug for project MAINProgram ****
+make -j16 all 
+arm-none-eabi-gcc "../Drivers/MAX30100/max30100_for_stm32_hal.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Core/Inc -I"C:/Users/chels/OneDrive - NAIT/term 4/CPME-2750 (Carlos)/New GitHub/cmpe2750-hardware-1242-a03-NareshKoirala/STM32CubeIDEDIR/MAINProgram/Drivers/MAX30100" -I"C:/Users/chels/OneDrive - NAIT/term 4/CPME-2750 (Carlos)/New GitHub/cmpe2750-hardware-1242-a03-NareshKoirala/STM32CubeIDEDIR/MAINProgram/Drivers/OLED" -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/MAX30100/max30100_for_stm32_hal.d" -MT"Drivers/MAX30100/max30100_for_stm32_hal.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/MAX30100/max30100_for_stm32_hal.o"
+../Drivers/MAX30100/max30100_for_stm32_hal.c: In function 'MAX30100_InterruptHandler':
+../Drivers/MAX30100/max30100_for_stm32_hal.c:70:48: warning: passing argument 2 of 'MAX30100_PlotIrToUART' makes pointer from integer without a cast [-Wint-conversion]
+   70 |         MAX30100_PlotIrToUART(_max30100_uuart, _max30100_hr_sample, 16);
+      |                                                ^~~~~~~~~~~~~~~~~~~
+      |                                                |
+      |                                                uint16_t {aka short unsigned int}
+In file included from ../Drivers/MAX30100/max30100_for_stm32_hal.c:3:
+../Drivers/MAX30100/max30100_for_stm32_hal.h:127:65: note: expected 'uint16_t *' {aka 'short unsigned int *'} but argument is of type 'uint16_t' {aka 'short unsigned int'}
+  127 | void MAX30100_PlotIrToUART(UART_HandleTypeDef *uuart, uint16_t *samples, uint8_t sampleSize);
+      |                                                       ~~~~~~~~~~^~~~~~~
+../Drivers/MAX30100/max30100_for_stm32_hal.c: In function 'MAX30100_PlotTemperatureToUART':
+../Drivers/MAX30100/max30100_for_stm32_hal.c:149:34: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  149 |         HAL_UART_Transmit(uuart, data, strlen(data), MAX30100_TIMEOUT);
+      |                                  ^~~~
+      |                                  |
+      |                                  char *
+In file included from ../Core/Inc/stm32g0xx_hal_conf.h:319,
+                 from ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Drivers/MAX30100/max30100_for_stm32_hal.h:5:
+../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h:1633:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1633 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Drivers/MAX30100/max30100_for_stm32_hal.c: In function 'MAX30100_PlotIrToUART':
+../Drivers/MAX30100/max30100_for_stm32_hal.c:156:42: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  156 |                 HAL_UART_Transmit(uuart, data, strlen(data), MAX30100_TIMEOUT);
+      |                                          ^~~~
+      |                                          |
+      |                                          char *
+../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h:1633:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1633 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Drivers/MAX30100/max30100_for_stm32_hal.c: In function 'MAX30100_PlotBothToUART':
+../Drivers/MAX30100/max30100_for_stm32_hal.c:164:42: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  164 |                 HAL_UART_Transmit(uuart, data, strlen(data), MAX30100_TIMEOUT);
+      |                                          ^~~~
+      |                                          |
+      |                                          char *
+../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h:1633:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1633 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Drivers/MAX30100/max30100_for_stm32_hal.c: In function 'MAX30100_CalculateSpO2':
+../Drivers/MAX30100/max30100_for_stm32_hal.c:229:10: warning: unused variable 'uart_buffer' [-Wunused-variable]
+  229 |     char uart_buffer[50];
+      |          ^~~~~~~~~~~
+../Drivers/MAX30100/max30100_for_stm32_hal.c: In function 'MAX30100_CalculateBPM':
+../Drivers/MAX30100/max30100_for_stm32_hal.c:214:63: warning: '
+   ' directive writing 2 bytes into a region of size between 0 and 16 [-Wformat-overflow=]
+  214 |     sprintf(uart_buffer, "IR Sample[%d]: %d, Time: %d, bpm: %f\r\n", sample_index, _max30100_ir_sample[sample_index], _max30100_time_sample[sample_index], bpm);
+      |                                                               ^~~~
+../Drivers/MAX30100/max30100_for_stm32_hal.c:214:5: note: 'sprintf' output between 37 and 361 bytes into a destination of size 50
+  214 |     sprintf(uart_buffer, "IR Sample[%d]: %d, Time: %d, bpm: %f\r\n", sample_index, _max30100_ir_sample[sample_index], _max30100_time_sample[sample_index], bpm);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "MAINProgram.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\chels\OneDrive - NAIT\term 4\CPME-2750 (Carlos)\New GitHub\cmpe2750-hardware-1242-a03-NareshKoirala\STM32CubeIDEDIR\MAINProgram\STM32G031K8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MAINProgram.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MAINProgram.elf
+ 
+arm-none-eabi-size  MAINProgram.elf 
+arm-none-eabi-objdump -h -S MAINProgram.elf  > "MAINProgram.list"
+   text	   data	    bss	    dec	    hex	filename
+  44828	    468	   3292	  48588	   bdcc	MAINProgram.elf
+Finished building: default.size.stdout
+ 
+Finished building: MAINProgram.list
+ 
+
+14:31:50 Build Finished. 0 errors, 6 warnings. (took 882ms)
+

@@ -1,0 +1,22 @@
+Comment,Designator,Footprint,JLCPCB Part #,MFR.Part #
+Battery_Cell,BT1,Battery:BatteryHolder_Eagle_12BH611-GR,,
+10uf,"C1,C2,C5,C6,C8,C9,C10",MasterLocal:C_0603_1608Metric,C1691,CL10A106MQ8NNNC
+1uF,"C3,C4",MasterLocal:C_0603_1608Metric,C1592,CL10A105KO8NNNC
+4.7nF 1KV,C7,MasterLocal:C_0603_1608Metric,C1538,0402B472K500NT
+Blue,"D1,D2",MasterLocal:LED_0603_1608Metric,,
+green,D3,MasterLocal:LED_0603_1608Metric,,
+Green,D4,MasterLocal:LED_0603_1608Metric,,
+Red,D5,MasterLocal:LED_0603_1608Metric,,
+Conn_ST_STDC14,J1,MasterLocal:3220-14-0100-00,,
+USB_B_Micro,J2,MasterLocal:USB_Micro-B_Amphenol_10118194_Horizontal,C10418,920-E52A2021S10100
+OLED,J3,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,,
+SENSOR,J4,Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical,,
+Volt Usage,J5,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,,
+560,"R1,R2,R3,R4",MasterLocal:R_0603_1608Metric,C23204,0603WAF5600T5E
+1M,R5,MasterLocal:R_0603_1608Metric,C17514,0805W8F1004T5E
+4.7k,"R6,R7,R8",MasterLocal:R_0603_1608Metric,C17673,0805W8F4701T5E
+180,R9,MasterLocal:R_0603_1608Metric,C17924,1206W4F1800T5E
+SW_Push,SW1,Button_Switch_THT:SW_PUSH_6mm_H4.3mm,,
+HT7333,"U1,U2",MasterLocal:IC_HT7333,C77777,HT7333-1
+STM32G031K8Tx,U3,MasterLocal:LQFP-32,C432203,STM32G031K8T6
+Q13FC13500004,Y1,MasterLocal:FC135327680KAE3,C32346,Q13FC13500004

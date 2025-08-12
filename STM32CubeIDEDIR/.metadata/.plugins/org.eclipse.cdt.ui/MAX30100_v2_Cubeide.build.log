@@ -1,0 +1,10 @@
+17:35:18 **** Incremental Build of configuration Debug for project MAX30100_v2_Cubeide ****
+make -j16 all 
+arm-none-eabi-size  MAX30100_v2_Cubeide.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9000	     12	   1716	  10728	   29e8	MAX30100_v2_Cubeide.elf
+Finished building: default.size.stdout
+ 
+
+17:35:18 Build Finished. 0 errors, 0 warnings. (took 190ms)
+

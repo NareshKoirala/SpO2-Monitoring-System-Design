@@ -1,0 +1,40 @@
+### Footprint positions - created on 2025-03-21T22:51:32-0600 ###
+### Printed by KiCad version 9.0.0
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val             Package                                        PosX       PosY       Rot  Side
+C1        10uf            C_0603_1608Metric                          146.0000   -56.1750   90.0000  top
+C2        10uf            C_0603_1608Metric                          137.2250   -57.6875    0.0000  top
+C3        1uF             C_0603_1608Metric                          138.2000   -69.4500   90.0000  top
+C4        1uF             C_0603_1608Metric                          143.6250   -77.6000    0.0000  top
+C5        10uf            C_0603_1608Metric                          106.5000   -39.6250  -90.0000  top
+C6        10uf            C_0603_1608Metric                          131.3000   -78.5250  -90.0000  top
+C7        4.7nF_1KV       C_0603_1608Metric                          138.5000   -82.3000   90.0000  top
+C8        10uf            C_0603_1608Metric                          112.6250   -74.3250   90.0000  top
+C9        10uf            C_0603_1608Metric                          125.1250   -54.8000  180.0000  top
+C10       10uf            C_0603_1608Metric                          125.1250   -51.8000  180.0000  top
+D1        Blue            LED_0603_1608Metric                        141.0000   -51.2000   90.0000  top
+D2        Blue            LED_0603_1608Metric                        141.1000   -57.7875   90.0000  top
+D3        green           LED_0603_1608Metric                        141.5000   -75.8000  180.0000  top
+D4        Green           LED_0603_1608Metric                        138.2000   -72.6375   90.0000  top
+D5        Red             LED_0603_1608Metric                        119.9125   -58.8000  180.0000  top
+J1        Conn_ST_STDC14  3220-14-0100-00                            124.3000   -37.8300  180.0000  top
+J2        USB_B_Micro     USB_Micro-B_Amphenol_10118194_Horizontal   143.8000   -81.0000    0.0000  top
+J3        OLED            PinHeader_1x04_P2.54mm_Vertical             94.4000   -74.5000   90.0000  top
+J4        SENSOR          PinHeader_1x05_P2.54mm_Vertical            114.5400   -82.7000   90.0000  top
+J5        Volt_Usage      PinHeader_1x03_P2.54mm_Vertical            128.6000   -82.7000   90.0000  top
+R1        560             R_0603_1608Metric                          141.1000   -54.4125   90.0000  top
+R2        560             R_0603_1608Metric                          141.2000   -60.9500   90.0000  top
+R3        560             R_0603_1608Metric                          145.3875   -75.7600  180.0000  top
+R4        560             R_0603_1608Metric                          138.2000   -76.0000   90.0000  top
+R5        1M              R_0603_1608Metric                          136.7000   -82.2750   90.0000  top
+R6        4.7k            R_0603_1608Metric                          111.1000   -69.6750  -90.0000  top
+R7        4.7k            R_0603_1608Metric                          114.1000   -69.6750  -90.0000  top
+R8        4.7k            R_0603_1608Metric                          106.4000   -64.9750  -90.0000  top
+R9        180             R_0603_1608Metric                          123.1250   -58.8000  180.0000  top
+SW1       SW_Push         SW_PUSH_6mm_H4.3mm                          94.2000   -35.3000    0.0000  top
+U1        HT7333          IC_HT7333                                  136.8000   -52.7875    0.0000  top
+U2        HT7333          IC_HT7333                                  143.0000   -69.7000  -90.0000  top
+U3        STM32G031K8Tx   LQFP-32                                    113.0148   -58.7000  -90.0000  top
+Y1        Q13FC13500004   FC135327680KAE3                            121.1000   -53.0500   90.0000  top
+## End

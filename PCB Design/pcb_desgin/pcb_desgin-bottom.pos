@@ -1,0 +1,7 @@
+### Footprint positions - created on 2025-03-21T22:51:32-0600 ###
+### Printed by KiCad version 9.0.0
+## Unit = mm, Angle = deg.
+## Side : bottom
+# Ref     Val           Package                              PosX       PosY       Rot  Side
+BT1       Battery_Cell  BatteryHolder_Eagle_12BH611-GR   144.2000   -50.8500    0.0000  bottom
+## End

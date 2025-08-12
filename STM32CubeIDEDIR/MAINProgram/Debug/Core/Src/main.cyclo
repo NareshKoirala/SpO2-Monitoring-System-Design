@@ -1,0 +1,9 @@
+../Core/Src/main.c:623:5:main	1
+../Core/Src/main.c:679:6:init_sensor	1
+../Core/Src/main.c:689:6:init_oled	1
+../Core/Src/main.c:699:6:update_oled	1
+../Core/Src/main.c:728:6:SystemClock_Config	3
+../Core/Src/main.c:768:13:MX_I2C1_Init	4
+../Core/Src/main.c:815:13:MX_USART2_UART_Init	2
+../Core/Src/main.c:850:13:MX_GPIO_Init	1
+../Core/Src/main.c:910:6:Error_Handler	1
